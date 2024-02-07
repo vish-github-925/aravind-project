@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-function Banner() {
+function Footer() {
     const navigate = useNavigate()
     const handleClick = () => {
         navigate("/contact")
@@ -35,4 +35,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Footer

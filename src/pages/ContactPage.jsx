@@ -38,7 +38,7 @@ function ContactPage() {
       </form>
       {/* For image to the right hand side */}
       <div className='hidden md:block'>
-        <img src="src/assets/bottle.jpg" alt="Bottle Image" className='h-[799.5px] pt-[2px] rounded-e-lg
+        <img src="/images/bottle.jpg" alt="Bottle Image" className='h-[799.5px] pt-[2px] rounded-e-lg
         ' />
       </div>
     </main>

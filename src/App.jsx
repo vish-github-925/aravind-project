@@ -5,13 +5,13 @@ import Header from './components/Header/Header'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import InspirationPage from './pages/InspirationPage'
-import Banner from './components/Banner/Banner'
 import ContactUs from './components/ContactUS/ContactUs'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     
-    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover' style={{backgroundImage: `url("src/assets/water-bg.jpg")` }}>
+    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover' style={{backgroundImage: `url("/images/water-bg.jpg")` }}>
     <BrowserRouter>
     <Header/>
     <Routes>
@@ -21,7 +21,7 @@ function App() {
       <Route path='/inspiration' element={<InspirationPage />} />
     </Routes>
     
-    <Banner />
+    <Footer />
     <ContactUs />
     </BrowserRouter>
     </main>
