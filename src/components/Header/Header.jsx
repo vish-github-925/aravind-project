@@ -24,7 +24,7 @@ function Header() {
   return (
     <header className='sticky right-0 top-0'>
         {/* For larger screens */}
-        <nav className='hidden md:px-80 md:flex h-[10vh] w-full items-center justify-between text-teal-600'>
+        <nav className='hidden md:px-80 md:flex h-[10vh] w-full items-center justify-between text-teal-600 bg-white'>
             <NavItem name="Home" linkLocation={""} />
             <NavItem name="About" linkLocation={"about"} />
             <NavItem name="Logo" linkLocation={""} />

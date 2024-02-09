@@ -29,7 +29,7 @@ function Footer() {
             </div>
         </div>
         <div className='h-[10vh] flex items-center justify-center'>
-            <span>© 2023  Copyright 'WaterProject' All Rights Reserved</span>
+            <span className='text-sm md:text-lg'>© 2023  Copyright 'WaterProject' All Rights Reserved</span>
         </div>
     </footer>
   )

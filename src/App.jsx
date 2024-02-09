@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
     
-    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover' style={{backgroundImage: `url("/images/water-bg.jpg")` }}>
+    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover text-justify'>
     <BrowserRouter>
     <Header/>
     <Routes>
