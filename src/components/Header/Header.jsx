@@ -2,7 +2,10 @@ import React from 'react'
 import NavItem from './NavItem'
 import MobileNavItem from "./MobileNavItem"
 import { useState } from 'react'
-import { redirect, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import Banner from '../Banner/Banner'
+
+
 function Header() {
   const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -22,14 +25,19 @@ function Header() {
     navigate(`/${loc}`)
   }
   return (
-    <header className='sticky right-0 top-0'>
+    <header className='sticky right-0 top-0 min-h-[15vh] md:flex items-center justify-normal z-10 bg-white'>
         {/* For larger screens */}
-        <nav className='hidden md:px-80 md:flex h-[10vh] w-full items-center justify-between text-teal-600 bg-white'>
+        <Banner />
+        <nav className='hidden py-6 md:px-32 md:flex  h-full w-full items-center justify-between text-teal-600'>
+            <div>
+            <NavItem name="Logo" linkLocation={""} />
+            </div>
+            <div className='md:flex items-center justify-normal space-x-10'>
             <NavItem name="Home" linkLocation={""} />
             <NavItem name="About" linkLocation={"about"} />
-            <NavItem name="Logo" linkLocation={""} />
             <NavItem name="Inspiration" linkLocation={"inspiration"} />
             <NavItem name="Contact Us" linkLocation={"contact"} />
+            </div>
         </nav>
         {/* For mobile screen */}
         

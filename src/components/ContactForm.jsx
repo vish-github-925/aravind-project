@@ -4,7 +4,7 @@ import FormItem from './FormItem/FormItem'
 function ContactForm({form, contactData, handleChange, handleSubmit}) {
   return (
     <form ref={form} action="post" className='bg-white h-full flex flex-col space-y-5 items-start border-2 p-10 rounded-s-lg md:w-2/3 w-full'>
-        <span className='text-3xl font-medium h-20'>Contact for your right of free water !</span>
+        <span className='border-b-2 border-b-slate-500 outline-none text-3xl font-medium h-10'>Contact </span>
         <FormItem type={"text"} name={"firstname"} value={contactData.firstname} onChange={handleChange} spanValue={"First name: *"}/>
         <FormItem type={"text"} name={"lastname"} value={contactData.lastname} onChange={handleChange} spanValue={"Last name: *"}/>
         <FormItem type={"email"} name={"email"} value={contactData.email} onChange={handleChange} spanValue={"Email: *"}/>

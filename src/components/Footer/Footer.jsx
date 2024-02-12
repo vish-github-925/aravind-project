@@ -16,7 +16,7 @@ function Footer() {
             <div className='h-1/3 md:h-full flex flex-col md:space-y-5 space-y-1 md:items-start md:pl-40 md:justify-start w-full md:w-1/2'>
                 <div className='flex items-center justify-center'>
                     <span className="material-symbols-outlined text-lg">mail</span>
-                    <span className='text-sm'>&nbsp; -&nbsp; aravindkumar@gmail.com</span>
+                    <span className='text-sm'>&nbsp; -&nbsp; aquaads@righttofreewater.io</span>
                 </div>
                 <div className='flex items-center justify-center'>
                     <span className="material-symbols-outlined text-lg">whatshot</span>
