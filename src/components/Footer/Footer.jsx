@@ -9,9 +9,9 @@ function Footer() {
     <footer className='flex flex-col bg-black text-white h-[60vh] md:px-40 md:pt-20 md:pb-5 px-10 pt-10'>
         <div className='flex flex-col w-full  md:flex-row  justify-between items-center  h-[50vh] '>
             <div className='h-2/3 md:h-full  w-full md:w-1/2 flex flex-col space-y-8 md:justify-normal md:space-y-3 items-start '>
-                <span className=' font-medium text-2xl'>Because water should be free</span>
+                    <span className=' font-medium text-3xl h-[50px]'>Because water should be free</span>
                 <span className='text-md'>Help us spread the word and share our movement with your friends and family</span>
-                <button onClick={handleClick} className='px-2 py-1 active:scale-95 ease-linear rounded text-white bg-blue-400 cursor-pointer hover:bg-blue-600'>Contact Us</button>
+                <button onClick={handleClick} className='px-2 py-1 active:scale-95 ease-linear rounded text-white bg-blue-600 cursor-pointer hover:bg-blue-500'>Contact Us</button>
             </div>
             <div className='h-1/3 md:h-full flex flex-col md:space-y-5 space-y-1 md:items-start md:pl-40 md:justify-start w-full md:w-1/2'>
                 <div className='flex items-center justify-center'>

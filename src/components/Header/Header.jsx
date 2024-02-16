@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavItem from './NavItem'
 import MobileNavItem from "./MobileNavItem"
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Banner from '../Banner/Banner'
+import { Link } from 'react-router-dom'
 
-
-function Header() {
+function Header({t}) {
   const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
+
+  
   const handleMenu = (e) => {
     setMenuOpen(prev => !prev)
   }
@@ -25,18 +27,19 @@ function Header() {
     navigate(`/${loc}`)
   }
   return (
-    <header className='sticky right-0 top-0 min-h-[15vh] md:flex items-center justify-normal z-10 bg-white'>
+    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full`}>
         {/* For larger screens */}
         <Banner />
-        <nav className='hidden py-6 md:px-32 md:flex  h-full w-full items-center justify-between text-teal-600'>
-            <div>
-            <NavItem name="Logo" linkLocation={""} />
-            </div>
+        <nav className='hidden py-6 md:px-32 md:flex  h-full w-full items-center justify-between text-slate-500'>
+           
+            <div className='h-full hover:cursor-pointer py-3 px-8 hover:rounded-2xl'>
+              <Link to={`/`} className={`text-lg tracking-wider h-full w-full font-medium transition-all ease-linear delay-7`}><img src="/images/logo.png" alt="Logo" className='h-60 w-75'/></Link>
+</div>
+            
             <div className='md:flex items-center justify-normal space-x-10'>
-            <NavItem name="Home" linkLocation={""} />
-            <NavItem name="About" linkLocation={"about"} />
-            <NavItem name="Inspiration" linkLocation={"inspiration"} />
-            <NavItem name="Contact Us" linkLocation={"contact"} />
+            <NavItem name="Home" linkLocation={""} t={t}/>
+            <NavItem name="About" linkLocation={"about"} t={t}/>
+            <button onClick={() => navigate("/contact")} className='text-white text-lg tracking-wider h-full w-full  hover:-translate-y-[2px] font-semibold transition-all ease-linear delay-75 hover:bg-green-400  bg-green-500 py-2 rounded'>Contact Us</button>
             </div>
         </nav>
         {/* For mobile screen */}

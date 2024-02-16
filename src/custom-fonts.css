@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Conquera Medium';
+    src: URL('/Conquera-Medium.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: 'Product Sans';
+    src: URL('/') format('TrueType');
+  }

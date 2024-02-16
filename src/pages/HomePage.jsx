@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
 import { useState } from 'react'
-import ContactFormHomePage from '../components/ContactFormHomePage'
 import emailjs from '@emailjs/browser'
 import Quote from '../components/Quote'
 // import { Fade } from 'react-awesome-reveal'
 import { Fade } from 'react-swift-reveal'
+
 import ContactForm from '../components/ContactForm'
+import Header from '../components/Header/Header'
 
 function HomePage() {
   const form = useRef()
@@ -38,26 +39,36 @@ function HomePage() {
   }
   return (
     <Fade>
-    <main className='px-20 md:px-40 min-h-[100vh] py-10 '>
-
-      <section className='min-h-[40vh] md:flex md:items-center justify-between md:space-x-10 '>
-        <div className='h-[500px] w-[500px] '>
-          <h1 className='text-[75px] h-full w-full font-bold  text-emerald-500'>Aqua Ads Right to free water</h1>
+    <main className='min-h-[100vh]'>
+  
+      <section className='md:flex md:flex-col md:items-center justify-between md:space-x-10 bg-gradient-to-b from-blue-500 to-blue-50 w-screen mb-5'>
+      <Header t={"text-black hover:text-white"}/>
+        <div className='h-[200px] w-full flex flex-col items-center justify-center '>
+          {/* <img src="/images/mainimage.png" alt="Aqua Ads Logo" className='rounded-lg w-full h-full pr-[50px]'/> */}
+          
+        <p style={{fontFamily: "Conquera Medium"}} className='text-[75px] text-center'>AQUA ADS</p>
+        <p style={{fontFamily: "Conquera Medium"}} className='text-[15px] text-center'>MAKING WAVES IN ADVERTISING</p>
         </div>
-        <div className='min-h-full w-1/3'>
-          <img src="/images/illustrations/1/1.png" alt="Water vector 1" className='rounded-lg h-96 w-full'/>
+        <div className='w-full h-[600px]'>
+        <img src="/images/Grassfieldphoto.jpg" alt="Water vector 1" className='rounded h-full w-full pr-[50px]'/>
         </div>
       </section>
 
       {/* <h1 className='text-center text-blue-400 font-bold text-3xl h-20'>Right to Free Water.</h1>
 
       <h2 className='text-center font-bold text-2xl h-20'>Yes, you heard it right. IT IS OUR RIGHT!</h2> */}
+      <img src="/images/illustrations/2/21.png" alt="Quote" className='h-10 w-15 px-20 mt-20'/>
       
       <Quote quote={"Water, a fundamental natural resource essential to life, is not readily available to all. It should be freely accessible to everyone, as clean and filtered water is a basic human right.💪"}/>
 
       {/* Mission */}
-      <section id='mission' className='mb-24 h-[500px] flex flex-col items-end justify-center space-y-8'>
-        <span className='text-4xl font-medium text-blue-500 hover:cursor-pointer h-[50px] border-b-2 border-b-teal-500'>Our Mission</span>
+      <section id='mission' className='mb-24 h-[500px] flex flex-col items-end justify-center space-y-8 px-20'>
+        <span className='text-4xl flex items-center justify-center  font-medium text-blue-500 hover:cursor-pointer h-[50px] border-b-2 border-b-teal-500'>Our Mission 
+        
+      <img src="/images/illustrations/2/25.png" alt="Quote" className='h-10 w-15 px-4'/>
+        
+        </span>
+
         <div className='flex space-x-20 w-full'>
         <img src="/images/waterdrinking.jpg" alt="Child drinking water" className='h-[300px] w-1/2 rounded-lg object-cover'/>
         <p className='text-xl tracking-wide my-2 flex items-center justify-center w-1/2'>
@@ -67,8 +78,9 @@ function HomePage() {
         </section>
 
       {/* How we work */}
-      <section id='howwework' className='my-20'>
+      <section id='howwework' className='my-20 px-20'>
         <span className='text-4xl font-medium text-blue-500 my-5 h-16 border-b-2 border-b-teal-500'>How we work</span>
+
         <div className='flex space-x-20 w-full'>
         <p className='text-xl tracking-wide my-2 flex items-center justify-center w-1/2'>
         Through partnerships with local communities, nonprofits, and businesses, we identify areas with limited access to clean water and distribute our water bottles and supply bottles directly to those in need. We prioritize areas where water scarcity poses significant challenges to daily life, such as remote villages, disaster-stricken regions, and underserved urban areas.
@@ -79,23 +91,13 @@ function HomePage() {
       </section>
       
       <div className=''>
-      <img src="/images/illustrations/2/21.png" alt="Quote" className='h-10 w-15'/>
+      <img src="/images/illustrations/2/21.png" alt="Quote" className='h-10 w-15  px-20'/>
 
       <Quote quote={`From keeping us hydrated and clean, to preventing the spread of deadly diseases, clean water is an essential that has such a huge ripple effect around the world. Tragically, almost 1 in 10 people lack clean water close to home, and climate change is only making things worse.`}/>
       </div>
       <Quote quote={"Together we can make clean water the star of the show, and make sure it's in reach for everyone, everywhere."}>
 
       </Quote>
-
-      
-      {/* Impact */}
-      {/* <section id='impact' className=''>
-        <h3>Our Impact</h3>
-        <p>
-
-        </p>
-
-      </section> */}
       
       <div className='h-30 w-full flex items-center justify-center space-x-10 '>
 
@@ -104,7 +106,8 @@ function HomePage() {
 
       </div>
       
-      <div className='flex items-center justify-center space-x-10 mt-14'>
+      <div className='flex items-center justify-center space-x-10 my-14 px-40'>
+
       <ContactForm form={form} contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit}/>
       {/* <img src="/images/illustrations/2/23.gif" alt="" className='h-[500px]'/> */}
       </div>
