@@ -41,22 +41,38 @@ function HomePage() {
     <Fade>
     <main className='min-h-[100vh]'>
   
-      <section className='md:flex md:flex-col md:items-center justify-between md:space-x-10 bg-gradient-to-b from-blue-500 to-blue-50 w-screen mb-5'>
-      <Header t={"text-black hover:text-white"}/>
-        <div className='h-[200px] w-full flex flex-col items-center justify-center '>
-          {/* <img src="/images/mainimage.png" alt="Aqua Ads Logo" className='rounded-lg w-full h-full pr-[50px]'/> */}
-          
+      <section className='md:flex md:flex-col md:items-center justify-between md:space-x-10  w-screen mb-5'>
+        <div className='h-[350px] w-full flex  items-center justify-center -space-x-32'>
+          <div>
+        <img src="/images/aqua_wave.png" alt="Aqua Wave" className='h-72 w-64 mt-10'/>
+        </div>
+        <div className='flex flex-col items-center justify-center'>
         <p style={{fontFamily: "Conquera Medium"}} className='text-[75px] text-center'>AQUA ADS</p>
         <p style={{fontFamily: "Conquera Medium"}} className='text-[15px] text-center'>MAKING WAVES IN ADVERTISING</p>
         </div>
-        <div className='w-full h-[600px]'>
+        </div>
+        <div className='w-full h-[600px] px-20'>
         <img src="/images/Grassfieldphoto.jpg" alt="Water vector 1" className='rounded h-full w-full pr-[50px]'/>
         </div>
       </section>
 
-      {/* <h1 className='text-center text-blue-400 font-bold text-3xl h-20'>Right to Free Water.</h1>
+      {/* Right to Free Water */}
+      <section id='howwework' className='mt-20 px-20 h-[550px] '>
+        <span className='text-4xl font-medium text-blue-500 my-5 h-16 border-b-2 border-b-teal-500'>Right to Free Water</span>
 
-      <h2 className='text-center font-bold text-2xl h-20'>Yes, you heard it right. IT IS OUR RIGHT!</h2> */}
+        <div className='flex space-x-20 w-full'>
+        <p className='text-xl tracking-wide my-2 flex items-center justify-center w-1/2'>
+        Through partnerships with local communities, nonprofits, and businesses, we identify areas with limited access to clean water and distribute our water bottles and supply bottles directly to those in need. We prioritize areas where water scarcity poses significant challenges to daily life, such as remote villages, disaster-stricken regions, and underserved urban areas.
+        </p>
+        <div className='w-1/2 flex flex-col items-center ml-10'>
+          <span style={{fontFamily: 'League Spartan'}} className='text-3xl font-bold'>RIGHT TO</span>
+          <span style={{fontFamily: 'League Spartan'}} className='text-3xl font-bold mt-2'>FREE WATER</span>
+          <span style={{fontFamily: 'League Spartan'}} className='text-sm font-bold'>FREE DRINKING MINERAL WATER</span>
+        <img src="/images/logo.png" alt="Partnership" className='h-[400px] w-full rounded-lg object-cover'/>
+        </div>
+        </div>
+      
+      </section>
       <img src="/images/illustrations/2/21.png" alt="Quote" className='h-10 w-15 px-20 mt-20'/>
       
       <Quote quote={"Water, a fundamental natural resource essential to life, is not readily available to all. It should be freely accessible to everyone, as clean and filtered water is a basic human right.💪"}/>

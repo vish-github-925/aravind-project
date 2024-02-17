@@ -10,9 +10,9 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
     
-    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover text-justify font-Conquera Medium' >
+    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover text-justify font-Conquera Medium' style={{fontFamily: "Product Sans Regular"}}>
     <BrowserRouter>
-    {/* <Header/> */}
+    <Header/>
     <Routes>
       <Route path='/' element={<HomePage />}/>
       <Route path='/about' element={<AboutPage />} />

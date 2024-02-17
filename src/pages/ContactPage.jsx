@@ -39,7 +39,6 @@ function ContactPage() {
     <main className='min-h-[100vh] flex flex-col' >
 
       {/* Contact form */}
-      <Header t={"text-slate-700 hover:text-black"} />
 
     <div className='px-20  flex items-center justify-center'>
       <ContactForm form={form} contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit}/>

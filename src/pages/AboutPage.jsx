@@ -3,7 +3,6 @@ import Header from '../components/Header/Header'
 function AboutPage() {
   return (
     <main className='min-h-[100vh] bg-slate-100'>
-             <Header t={"text-slate-700 hover:text-black"} />
 
       
       <section id='howwework' className='my-20 px-20'>

@@ -4,6 +4,10 @@
   }
 
 @font-face {
-    font-family: 'Product Sans';
-    src: URL('/') format('TrueType');
+    font-family: 'Product Sans Regular';
+    src: URL('/Product-Sans.ttf') format('truetype');
   }
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/LeagueSpartan.ttf') format('truetype');
+}
