@@ -42,11 +42,7 @@ function ContactPage() {
 
     <div className='px-20  flex items-center justify-center'>
       <ContactForm form={form} contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit}/>
-      {/* For image to the right hand side */}
-      <div className='hidden md:block'>
-        <img src="/images/bottle.jpg" alt="Bottle Image" className='h-[799.5px] pt-[2px] rounded-e-lg
-        ' />
-      </div>
+  
       </div>
       
     </main>

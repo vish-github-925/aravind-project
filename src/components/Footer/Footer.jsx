@@ -1,5 +1,6 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
 function Footer() {
     const navigate = useNavigate()
     const handleClick = () => {
@@ -28,9 +29,13 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div className='h-[10vh] flex items-center justify-center'>
-            <span className='text-sm md:text-lg'>© 2023  Copyright 'WaterProject' All Rights Reserved</span>
-        </div>
+        {/* <div className='h-[10vh] flex items-start'>
+            <span className='text-sm md:text-sm'>© 2024  Copyright 'Aqua Ads' All Rights Reserved</span>
+            <div className='flex items-start'>
+                <h1>Powered By</h1>
+                <h2>Aqua Ads</h2>
+            </div>
+        </div> */}
     </footer>
   )
 }

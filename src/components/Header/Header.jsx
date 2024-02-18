@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Banner from '../Banner/Banner'
 import { Link } from 'react-router-dom'
+import { Button } from "@material-tailwind/react";
 
 function Header({t}) {
   const navigate = useNavigate()
@@ -27,22 +28,26 @@ function Header({t}) {
     navigate(`/${loc}`)
   }
   return (
-    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full h-[100px] bg-white`}>
+    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[15vh] mb-10 bg-white`}>
         {/* For larger screens */}
         <Banner />
-        <nav className='hidden py-6 md:px-32 md:flex  h-full w-full items-center justify-between text-slate-500'>
+        <nav className='hidden md:flex md:px-20  h-full w-full items-center justify-between text-slate-500 '>
            
-            <div className='h-full hover:cursor-pointer px-8 hover:rounded-2xl w-[500px] '>
-              <Link to={`/`} className={`text-lg tracking-wider h-full w-full font-medium transition-all ease-linear delay-7 flex items-center justify-start -space-x-5`}>
-          <img src="/images/aqua_wave.png" alt="Aqua Ads Logo" className='rounded-lg  h-[50px] w-[50px]'/><span style={{fontFamily: "Conquera Medium"}} className='text-[10px] mb-2'>AQUA ADS</span>
-
+        <div className='h-full hover:cursor-pointer w-[300px]  -ml-6'>
+              <Link to={`/`} className={`text-lg tracking-wider h-full w-full font-medium transition-all ease-linear delay-7 flex items-center justify-center -space-x-20`}>
+                  <img src="/images/aqua_wave.png" alt="Aqua Ads Logo" className='rounded-lg  h-full  w-[100px] '/>
+                  <div className='flex flex-col w-full h-full items-center justify-center -space-y-7 '>
+                      <span style={{fontFamily: "Conquera Medium"}} className='text-[20px] font-bold text-black h-1/2'>AQUA ADS</span>
+                      <span style={{fontFamily: "Conquera Medium"}} className='text-[5px] font-bold text-black  h1/2
+                      '>MAKING WAVES IN ADVERTISING</span>
+                  </div>
               </Link>
-</div> 
+        </div> 
             
             <div className='md:flex items-center justify-normal space-x-10'>
             <NavItem name="Home" linkLocation={""} t={t}/>
             <NavItem name="About" linkLocation={"about"} t={t}/>
-            <button onClick={() => navigate("/contact")} className='text-white text-lg tracking-wider h-full w-full  hover:-translate-y-[2px] font-semibold transition-all ease-linear delay-75 hover:bg-green-400  bg-green-500 py-2 rounded'>Contact Us</button>
+            <Button onClick={() => navigate("/contact")} className='text-white text-sm tracking-wider w-[200px] h-[50px] font-semibold transition-all ease-linear hover:bg-green-400  bg-green-500 rounded'>Contact Us</Button>
             </div>
         </nav>
         {/* For mobile screen */}
