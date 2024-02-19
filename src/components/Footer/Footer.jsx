@@ -7,8 +7,8 @@ function Footer() {
         navigate("/contact")
     }
   return (
-    <footer className='flex flex-col bg-black text-white h-[60vh] md:px-40 md:pt-20 md:pb-5 px-10 pt-10'>
-        <div className='flex flex-col w-full  md:flex-row  justify-between items-center  h-[50vh] '>
+    <footer className='flex flex-col bg-black text-white md:px-40 md:py-20 md:pb-5 px-10 pt-10 mt-10'>
+        <div className='flex flex-col w-full  md:flex-row  justify-between items-center'>
             <div className='h-2/3 md:h-full  w-full md:w-1/2 flex flex-col space-y-8 md:justify-normal md:space-y-3 items-start '>
                     <span className=' font-medium text-3xl h-[50px]'>Because water should be free</span>
                 <span className='text-md'>Help us spread the word and share our movement with your friends and family</span>

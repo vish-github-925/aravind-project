@@ -82,19 +82,23 @@ function HomePage() {
       </div>
 
       {/* Right to Free Water */}
-      <section id='howwework' className='flex items-center justify-between w-full mt-10 h-[400px]'>
+      <section id='howwework' className='flex items-center justify-between w-full mt-10 '>
       
         <div className='flex flex-col h-full w-1/2 '>
+          <div className='flex flex-col items-center'>
           <h1 className='text-[75px]'>RIGHT TO</h1>
           <h1 className='text-[75px]'>FREE WATER</h1>
+          </div>
         <p className='text-xl tracking-wide '>
         Right to free water is a campaign for a cause and Innovative advertising solution. Which brings impactful visibility to the targeted customers.
         </p>
         </div>   
         <div className='flex flex-col items-center w-1/2  h-full '>
+          <div className='flex flex-col items-center'>
           <span className='text-4xl font-extrabold font-serif'>RIGHT TO</span>
           <span  className='text-4xl  font-serif font-extrabold mt-2'>FREE WATER</span>
           <span  className='text-sm  font-serif font-bold'>FREE DRINKING MINERAL WATER</span>
+          </div>
         <img src="/images/logo1.png" alt="Partnership" className='h-[200px] rounded-lg object-cover'/>
         </div>    
         
@@ -106,7 +110,7 @@ function HomePage() {
       <Quote quote={"Water, a fundamental natural resource essential to life, is not readily available to all. It should be freely accessible to everyone, as clean and filtered water is a basic human right.💪"}/>
 
       {/* Mission */}
-      <section id='mission' className='mb-24 h-[500px] flex flex-col items-end justify-center space-y-8 px-20'>
+      <section id='mission' className='mb-24  flex flex-col items-end justify-center space-y-8 px-20'>
         <span className='text-4xl flex items-center justify-center  font-medium text-blue-500 hover:cursor-pointer h-[50px] border-b-2 border-b-teal-500'>Our Mission 
         
       <img src="/images/illustrations/2/25.png" alt="Quote" className='h-10 w-15 px-4'/>

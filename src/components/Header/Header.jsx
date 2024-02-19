@@ -28,12 +28,12 @@ function Header({t}) {
     navigate(`/${loc}`)
   }
   return (
-    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[15vh] mb-10 bg-white`}>
+    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[25vh] mb-10 bg-white`}>
         {/* For larger screens */}
         <Banner />
         <nav className='hidden md:flex md:px-20  h-full w-full items-center justify-between text-slate-500 '>
            
-        <div className='h-full hover:cursor-pointer w-[300px]  -ml-6'>
+        {/* <div className='h-full hover:cursor-pointer w-[300px]  -ml-6'>
               <Link to={`/`} className={`text-lg tracking-wider h-full w-full font-medium transition-all ease-linear delay-7 flex items-center justify-center -space-x-20`}>
                   <img src="/images/aqua_wave.png" alt="Aqua Ads Logo" className='rounded-lg  h-full  w-[100px] '/>
                   <div className='flex flex-col w-full h-full items-center justify-center -space-y-7 '>
@@ -42,7 +42,14 @@ function Header({t}) {
                       '>MAKING WAVES IN ADVERTISING</span>
                   </div>
               </Link>
-        </div> 
+        </div>  */}
+        <div className='h-full hover:cursor-pointer w-[300px] bg-green-100'>
+              <Link to={`/`} className={`h-full w-full`}>
+                  <img src="/images/aqua_ads_logo.jpg" alt="Aqua Ads Logo" className='h-[25vh] w-full'/>
+        
+              </Link>
+        </div>
+
             
             <div className='md:flex items-center justify-normal space-x-10'>
             <NavItem name="Home" linkLocation={""} t={t}/>

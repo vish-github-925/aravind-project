@@ -24,6 +24,10 @@ function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(form.current)
+    if(contactData.firstname.length === 0 || contactData.lastname.length === 0 || contactData.message.length === 0 || contactData.email.length === 0 || contactData.mobilenumber.length === 0 || contactData.message.length === 0)
+  {
+    disabled = true
+  }else{
     emailjs.sendForm("service_4wxmoyk","template_k7yo06o", form.current, '5J6qgLSSL6Pj0wij5').then((result) => {console.log("Email sent"+result)})
     setContactData({
       firstname: "",
@@ -33,6 +37,8 @@ function ContactPage() {
       subject: "",
       message: ""
     })
+  }
+    
   }
   return (
     
