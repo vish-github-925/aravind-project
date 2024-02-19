@@ -11,10 +11,9 @@ function ContactForm({form, contactData, handleChange, handleSubmit}) {
   }else{
     disabled = false
   }
-  console.log(disabled)
   return(
     <form ref={form} action="post" className='bg-white h-full flex flex-col space-y-5 items-start border-2 p-10 rounded-s-lg md:w-2/3 w-full'>
-        <span className='border-b-2 border-b-slate-500 outline-none text-5xl font-medium h-14'>Contact </span>
+        <span className='border-b-2 border-b-slate-500 outline-none md:text-5xl text-3xl font-medium h-14'>Contact </span>
         <FormItem type={"text"} name={"firstname"} value={contactData.firstname} onChange={handleChange} spanValue={"First name: *"}/>
         <FormItem type={"text"} name={"lastname"} value={contactData.lastname} onChange={handleChange} spanValue={"Last name: *"}/>
         <FormItem type={"email"} name={"email"} value={contactData.email} onChange={handleChange} spanValue={"Email: *"}/>

@@ -18,7 +18,7 @@ function Header({t}) {
   const handleMobileNavClick = (e) => {
     setMenuOpen(false)
     let loc = ""
-    if(e.target.innerText === "Home" || e.target.innerText === "Logo"){
+    if(e.target.innerText === "Home"){
       loc = ""
     }
     else{
@@ -28,7 +28,7 @@ function Header({t}) {
     navigate(`/${loc}`)
   }
   return (
-    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[25vh] mb-10 bg-white`}>
+    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[15vh] mb-10 bg-white`}>
         {/* For larger screens */}
         <Banner />
         <nav className='hidden md:flex md:px-20  h-full w-full items-center justify-between text-slate-500 '>
@@ -43,14 +43,12 @@ function Header({t}) {
                   </div>
               </Link>
         </div>  */}
-        <div className='h-full hover:cursor-pointer w-[300px] bg-green-100'>
-              <Link to={`/`} className={`h-full w-full`}>
-                  <img src="/images/aqua_ads_logo.jpg" alt="Aqua Ads Logo" className='h-[25vh] w-full'/>
+        <div className='h-full hover:cursor-pointer w-[300px]'>
+              <Link to={`/`} className={`h-full w-full flex items-center justify-start`}>
+                  <img src="/images/aqua_ads_logo_white.jpg" alt="Aqua Ads Logo" className='h-1/2 w-3/4'/>
         
               </Link>
         </div>
-
-            
             <div className='md:flex items-center justify-normal space-x-10'>
             <NavItem name="Home" linkLocation={""} t={t}/>
             <NavItem name="About" linkLocation={"about"} t={t}/>
@@ -68,11 +66,14 @@ function Header({t}) {
         </div>
 )}
 {menuOpen && ( <nav className='md:hidden h-max flex flex-col items-center space-y-5  py-5 outline-none border-b-2 border-b-slate-500 bg-white shadow-lg w-full z-10  ease-linear delay-75'>
+         
+           <div className='flex items-center justify-center hover:cursor-pointer' onClick={handleMobileNavClick} name="Home" >
+            <img src="/images/aqua_ads_logo_white.jpg" alt="Logo" className='h-1/2 w-1/2'/>
+            </div>
+           
             <MobileNavItem name="Home"  onClick={handleMobileNavClick}/>
             <MobileNavItem name="About" onClick={handleMobileNavClick}/>
-            <MobileNavItem name="Logo"  onClick={handleMobileNavClick}/>
-            <MobileNavItem name="Inspiration" onClick={handleMobileNavClick}/>
-            <MobileNavItem name="Contact Us" onClick={handleMobileNavClick}/>
+            <Button onClick={handleMobileNavClick} className='text-white text-sm tracking-wider w-[200px] h-[50px] font-semibold transition-all ease-linear hover:bg-green-400  bg-green-500 rounded'>Contact Us</Button>
         </nav>)}
         
     </header>
