@@ -58,14 +58,14 @@ function Header({t}) {
         {/* For mobile screen */}
         
        
-        {menuOpen ? ( <div className='md:hidden overflow-hidden flex h-[10vh] items-center bg-white  px-5 justify-end sticky z-10 cursor-pointer ease-linear'>
+        {menuOpen ? ( <div className='md:hidden overflow-hidden flex h-[10vh] items-center bg-white px-5 justify-end sticky z-10 cursor-pointer ease-out transition-all delay-75'>
         <span className="material-symbols-outlined text-3xl text-slate-600" onClick={handleMenu}>close</span>
         </div>) : (
             <div className='md:hidden flex h-[10vh] items-center  px-5 justify-end sticky z-10 cursor-pointer ease-linear'>
         <span className="material-symbols-outlined text-3xl text-slate-600" onClick={handleMenu}>menu</span>
         </div>
 )}
-{menuOpen && ( <nav className='md:hidden h-max flex flex-col items-center space-y-5  py-5 outline-none border-b-2 border-b-slate-500 bg-white shadow-lg w-full z-10  ease-linear delay-75'>
+{menuOpen && ( <nav className='md:hidden h-max flex flex-col items-center space-y-5  py-5 outline-none border-b-2 border-b-slate-500 shadow-lg w-full z-10  ease-linear delay-75'>
          
            <div className='flex items-center justify-center hover:cursor-pointer' onClick={handleMobileNavClick} name="Home" >
             <img src="/images/aqua_ads_logo_white.jpg" alt="Logo" className='h-1/2 w-1/2'/>
@@ -75,7 +75,6 @@ function Header({t}) {
             <MobileNavItem name="About" onClick={handleMobileNavClick}/>
             <Button onClick={handleMobileNavClick} className='text-white text-sm tracking-wider w-[200px] h-[50px] font-semibold transition-all ease-linear hover:bg-green-400  bg-green-500 rounded'>Contact Us</Button>
         </nav>)}
-        
     </header>
   )
 }

@@ -77,26 +77,26 @@ function HomePage() {
         <img src="/images/RAPIDOlabel.jpg" alt="Rapido Ad" className='h-full w-full object-cover'/>
       </Carousel>
 
-      <div className='w-full py-4 flex items-end justify-end'>
+      <div className='w-full py-4 flex px-5 items-end justify-end'>
         <p className='text-sm md:text-lg'>* For demonstration purpose only</p>
       </div>
 
       {/* Right to Free Water */}
       <section id='howwework' className='flex flex-col md:items-center md:flex-row md:justify-between w-full mt-10 items-center justify-center'>
       
-        <div className='flex flex-col h-full md:w-1/2'>
-          <div className='flex flex-col items-center'>
-          <h1 className='md:text-[75px] text-[45px]'>RIGHT TO</h1>
-          <h1 className='md:text-[75px] text-[45px]'>FREE WATER</h1>
+        <div className='flex flex-col md:w-1/2'>
+          <div className='flex flex-col items-center h-full'>
+          <h1 className='h-14 md:h-20 lg:text-7xl text-5xl'>RIGHT TO</h1>
+          <h1 className='h-14 md:h-20 lg:text-7xl text-5xl '>FREE WATER</h1>
           </div>
-        <p className='md:text-xl text-lg tracking-wide px-20 mb-20 md:mb-0'>
+        <p className='md:text-xl text-lg tracking-wide px-10 mb-20 md:mb-0'>
         Right to free water is a campaign for a cause and Innovative advertising solution. Which brings impactful visibility to the targeted customers.
         </p>
         </div>   
         <div className='flex flex-col items-center md:w-1/2  h-full '>
           <div className='flex flex-col items-center'>
-          <span className='text-4xl font-extrabold font-serif'>RIGHT TO</span>
-          <span  className='text-4xl  font-serif font-extrabold mt-2'>FREE WATER</span>
+          <span className='md:text-4xl font-extrabold text-3xl font-serif'>RIGHT TO</span>
+          <span  className='md:text-4xl text-3xl  font-serif font-extrabold mt-2'>FREE WATER</span>
           <span  className='text-sm  font-serif font-bold'>FREE DRINKING MINERAL WATER</span>
           </div>
         <img src="/images/logo1.png" alt="Partnership" className='h-[200px] rounded-lg object-cover'/>
@@ -105,13 +105,13 @@ function HomePage() {
         
       
       </section>
-      <div className='h-10 w-full px-20 flex items-end mt-20'>
+      <div className='h-10 w-full px-10 flex items-end mt-20'>
       <img src="/images/illustrations/2/21.png" alt="Quote" className='h-1/2 md:h-full w-10 md:w-20'/>
       </div>
       <Quote quote={"Water, a fundamental natural resource essential to life, is not readily available to all. It should be freely accessible to everyone, as clean and filtered water is a basic human right.💪"}/>
 
       {/* Mission */}
-      <section id='mission' className='flex md:flex-col flex-col md:items-end items-center justify-center space-y-8 px-20 py-10'>
+      <section id='mission' className='flex md:flex-col flex-col md:items-end items-center justify-center space-y-8 px-10 py-10'>
         <span className='text-[40px] flex items-center justify-center  font-medium text-blue-500 hover:cursor-pointer  border-b-2 border-b-teal-500'>Our Mission 
         
       <img src="/images/illustrations/2/25.png" alt="Quote" className='h-10 w-15 px-4'/>
@@ -121,18 +121,18 @@ function HomePage() {
         <div className='flex flex-col md:flex-row md:space-x-20 w-full'>
         <img src="/images/waterdrinking.jpg" alt="Child drinking water" className='h-[300px] md:w-1/2  rounded-lg object-cover'/>
         <p className='md:text-xl text-lg tracking-wide my-2 flex items-center justify-center md:w-1/2'>
-          Our mission is simple yet profound: to ensure that no one goes thirsty. We strive to make clean water accessible to all, regardless of geographical location, socioeconomic status, or any other barriers they may face. By providing free water bottles and supply bottles, we aim to quench the thirst of those in need and contribute to a healthier, more equitable world.</p>
+          Our mission is simple yet profound, to ensure that no one goes thirsty.   &nbsp;  We strive to make clean water accessible to all, regardless of geographical location, socioeconomic status, or any other barriers they may face. &nbsp; By providing free water bottles and supply bottles, we aim to quench the thirst of those in need and contribute to a healthier, more equitable world.</p>
         </div>
         
         </section>
 
       {/* How we work */}
-      <section id='howwework' className='px-20'>
+      <section id='howwework' className='px-10'>
         <span className='text-[40px] font-medium text-blue-500 my-5 h-16 border-b-2 border-b-teal-500'>How we work</span>
 
         <div className='flex md:space-x-20 w-full md:flex-row flex-col'>
         <p className='text-xl tracking-wide my-2 flex items-center justify-center md:w-1/2'>
-        Through partnerships with local communities, nonprofits, and businesses, we identify areas with limited access to clean water and distribute our water bottles and supply bottles directly to those in need. We prioritize areas where water scarcity poses significant challenges to daily life, such as remote villages, disaster-stricken regions, and underserved urban areas.
+        Through partnerships with the local communities, nonprofits, and businesses, we identify areas with limited access to clean water and distribute our water bottles and supply bottles directly to those in need. We prioritize areas where water scarcity poses significant challenges to daily life, such as remote villages, disaster-stricken regions, and underserved urban areas.
         </p>
         <img src="/images/partnership.jpg" alt="Partnership" className='md:w-1/2 w-full  rounded-lg object-cover'/>
         </div>
@@ -140,7 +140,7 @@ function HomePage() {
       </section>
       
       <div className=''>
-      <div className='h-10 w-full px-20 flex items-end mt-20'>
+      <div className='h-10 w-full px-10 flex items-end mt-20'>
       <img src="/images/illustrations/2/21.png" alt="Quote" className='h-1/2 md:h-full w-10 md:w-20'/>
       </div>
 
@@ -158,7 +158,7 @@ function HomePage() {
       </div>
       
       {/* Contact us section */}
-      <div className='flex items-center justify-center md:space-x-10 my-5 px-10 md:px-0'>
+      <div className='flex items-center justify-center md:space-x-10 my-5 px-5 md:px-0'>
 
       <ContactForm form={form} contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit}/>
       {/* <img src="/images/illustrations/2/23.gif" alt="" className='h-[500px]'/> */}
