@@ -28,21 +28,10 @@ function Header({t}) {
     navigate(`/${loc}`)
   }
   return (
-    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[15vh] mb-10 bg-white`}>
+    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[15vh] bg-white`}>
         {/* For larger screens */}
         <Banner />
         <nav className='hidden md:flex md:px-20  h-full w-full items-center justify-between text-slate-500 '>
-           
-        {/* <div className='h-full hover:cursor-pointer w-[300px]  -ml-6'>
-              <Link to={`/`} className={`text-lg tracking-wider h-full w-full font-medium transition-all ease-linear delay-7 flex items-center justify-center -space-x-20`}>
-                  <img src="/images/aqua_wave.png" alt="Aqua Ads Logo" className='rounded-lg  h-full  w-[100px] '/>
-                  <div className='flex flex-col w-full h-full items-center justify-center -space-y-7 '>
-                      <span style={{fontFamily: "Conquera Medium"}} className='text-[20px] font-bold text-black h-1/2'>AQUA ADS</span>
-                      <span style={{fontFamily: "Conquera Medium"}} className='text-[5px] font-bold text-black  h1/2
-                      '>MAKING WAVES IN ADVERTISING</span>
-                  </div>
-              </Link>
-        </div>  */}
         <div className='h-full hover:cursor-pointer w-[300px]'>
               <Link to={`/`} className={`h-full w-full flex items-center justify-start`}>
                   <img src="/images/aqua_ads_logo_white.jpg" alt="Aqua Ads Logo" className='h-1/2 w-3/4'/>
@@ -55,9 +44,9 @@ function Header({t}) {
             <Button onClick={() => navigate("/contact")} className='text-white text-sm tracking-wider w-[200px] h-[50px] font-semibold transition-all ease-linear hover:bg-green-400  bg-green-500 rounded'>Contact Us</Button>
             </div>
         </nav>
-        {/* For mobile screen */}
         
        
+        {/* For mobile screen */}
         {menuOpen ? ( <div className='md:hidden overflow-hidden flex h-[10vh] items-center bg-white px-5 justify-end sticky z-10 cursor-pointer ease-out transition-all delay-75'>
         <span className="material-symbols-outlined text-3xl text-slate-600" onClick={handleMenu}>close</span>
         </div>) : (
