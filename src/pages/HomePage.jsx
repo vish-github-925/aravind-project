@@ -70,7 +70,7 @@ function HomePage() {
       </section> */}
 
       {/* Main section Carousel */}
-      <Carousel  className='w-full rounded transition-all duration-200 ' autoplay={true} interval={2000} loop>
+      <Carousel  className='w-full rounded transition-all duration-200 ' autoplay={true} autoplayDelay={8000}  transition={{duration: 2}} loop>
         
         <img src="/images/zomatoFILE.jpg" alt="Zomato Ad" className='h-full w-full object-cover'/>
         <img src="/images/SWIGGY LABEL.jpg" alt="Swiggy Ad" className='h-full w-full object-cover'/>
