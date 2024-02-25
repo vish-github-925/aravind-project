@@ -10,7 +10,7 @@ import ErrorPage from './pages/ErrorPage'
 function App() {
   return (
     
-    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover text-justify font-Conquera Medium' style={{fontFamily: "Product Sans Regular"}}>
+    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover text-justify font-Conquera Medium text-[#6d7c90]' style={{fontFamily: "Lato Regular"}}>
     <BrowserRouter>
     <Header/>
     <Routes>

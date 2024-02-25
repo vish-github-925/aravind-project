@@ -46,7 +46,7 @@ function ContactPage() {
 
       {/* Contact form */}
 
-    <div className='md:px-20 px-10 flex items-center justify-center'>
+    <div className='md:px-20 px-10 flex items-center justify-center text-black'>
       <ContactForm form={form} contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit}/>
   
       </div>

@@ -7,7 +7,14 @@ module.exports = withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'translateY(100px)', },
+          '100%': { transform: 'translate(0px)' },
+        }
+      }
+    },
   },
   plugins: [],
 });
