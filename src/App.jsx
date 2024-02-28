@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import Footer from './components/Footer/Footer'
 import ErrorPage from './pages/ErrorPage'
+import FAQPage from './pages/FAQPage'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/' element={<HomePage />} errorElement={<ErrorPage />}/>
       <Route path='/about' element={<AboutPage />}  errorElement={<ErrorPage />}/>
       <Route path='/contact' element={<ContactPage />} errorElement={<ErrorPage />}/>
+      <Route path='/faq' element={<FAQPage />} errorElement={<FAQPage />}/>
       <Route path="*" element={<ErrorPage />} />
     </Routes>
     

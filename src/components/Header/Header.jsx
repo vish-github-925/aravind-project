@@ -7,7 +7,7 @@ import Banner from '../Banner/Banner'
 import { Link } from 'react-router-dom'
 import { Button } from "@material-tailwind/react";
 
-function Header({t}) {
+function Header() {
   const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -39,8 +39,9 @@ function Header({t}) {
               </Link>
         </div>
             <div className='md:flex items-center justify-normal space-x-10'>
-            <NavItem name="Home" linkLocation={""} t={t}/>
-            <NavItem name="About" linkLocation={"about"} t={t}/>
+            <NavItem name="Home" linkLocation={""}/>
+            <NavItem name="About" linkLocation={"about"}/>
+            <NavItem name="FAQ" linkLocation={"faq"}/>
             <Button onClick={() => navigate("/contact")} className='text-white text-sm tracking-wider w-[200px] h-[50px] font-semibold transition-all ease-linear hover:bg-green-400  bg-green-500 rounded'>Contact Us</Button>
             </div>
         </nav>
@@ -62,6 +63,7 @@ function Header({t}) {
            
             <MobileNavItem name="Home"  onClick={handleMobileNavClick}/>
             <MobileNavItem name="About" onClick={handleMobileNavClick}/>
+            <MobileNavItem name="FAQ" onClick={handleMobileNavClick}/>
             <Button onClick={handleMobileNavClick} className='text-white text-sm tracking-wider w-[200px] h-[50px] font-semibold transition-all ease-linear hover:bg-green-400  bg-green-500 rounded'>Contact Us</Button>
         </nav>)}
     </header>

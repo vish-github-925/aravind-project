@@ -11,7 +11,7 @@ function AboutPage() {
      
 
       {/* How we work */}
-      <section id='howwework' className={`px-10 ${sec3View ? 'animate-[wiggle_1s_ease-in-out]' : ''} py-10`} ref={sec3Ref}>
+      <section id='howwework' className={`px-10  py-10`} ref={sec3Ref}>
         <span className='text-[40px] font-medium text-blue-500 my-5 h-16 border-b-2 border-b-teal-500'>How we work</span>
 
         <div className='flex md:space-x-20 w-full md:flex-row flex-col'>
@@ -24,7 +24,7 @@ function AboutPage() {
       </section>
       
        {/* Mission */}
-       <section id='mission' ref={sec2Ref} className={`flex md:flex-col flex-col md:items-end items-center justify-center space-y-8 px-10 py-10 ${sec2View ? 'animate-[wiggle_1s_ease-in-out]' : ''}`}>
+       <section id='mission' ref={sec2Ref} className={`flex md:flex-col flex-col md:items-end items-center justify-center space-y-8 px-10 py-10 `}>
         <span className='text-[40px] flex items-center justify-center  font-medium text-blue-500 hover:cursor-pointer  border-b-2 border-b-teal-500'>Our Mission 
         
       <img src="/images/illustrations/2/25.png" alt="Quote" className='h-10 w-15 px-4'/>
