@@ -12,6 +12,14 @@ module.exports = withMT({
         wiggle: {
           '0%': { transform: 'translateY(100px)', },
           '100%': { transform: 'translate(0px)' },
+        },
+        fadeInLeft: {
+          '0%': { transform: 'translateX(100px)', },
+          '100%': { transform: 'translate(0px)' },
+        },
+        fadeInRight: {
+          '0%': { transform: 'translateX(-100px)', },
+          '100%': { transform: 'translate(0px)' },
         }
       }
     },

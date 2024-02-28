@@ -12,13 +12,3 @@
   overflow-x: hidden;
 }
 
-@keyframes fadeIn {
-  0% {
-    transition: all;
-    translate: 0px 0px 40px 0px;
-  }
-  100%{
-    translate: 0px;
-    background-color: aqua;
-  }
-}

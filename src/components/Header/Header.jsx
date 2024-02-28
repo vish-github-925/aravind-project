@@ -28,13 +28,13 @@ function Header({t}) {
     navigate(`/${loc}`)
   }
   return (
-    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[15vh] bg-white`}>
+    <header className={`transition-all duration-300 sticky right-0 top-0 md:flex items-center justify-normal z-10   w-full md:h-[20vh] bg-white`}>
         {/* For larger screens */}
         <Banner />
         <nav className='hidden md:flex md:px-20  h-full w-full items-center justify-between text-slate-500 '>
         <div className='h-full hover:cursor-pointer w-[300px]'>
               <Link to={`/`} className={`h-full w-full flex items-center justify-start`}>
-                  <img src="/images/aqua_ads_logo_white.jpg" alt="Aqua Ads Logo" className='h-1/2 w-3/4'/>
+                  <img src="/images/aqua_ads_logo_white.jpg" alt="Aqua Ads Logo" className='h-2/3 w-full'/>
         
               </Link>
         </div>

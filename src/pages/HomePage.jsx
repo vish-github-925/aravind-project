@@ -87,30 +87,30 @@ function HomePage() {
       <Quote quote={"Water, a fundamental natural resource essential to life, is not readily available to all. It should be freely accessible to everyone, as clean and filtered water is a basic human right.💪"}/>
 
       {/* Mission */}
-      <section id='mission' ref={sec2Ref} className={`flex md:flex-col flex-col md:items-end items-center justify-center space-y-8 px-10 py-10 ${sec2View ? 'animate-[wiggle_1s_ease-in-out]' : ''}`}>
+      <section id='mission' className={`flex md:flex-col flex-col md:items-end items-center justify-center space-y-8 px-10 mb-20`}>
         <span className='text-[40px] flex items-center justify-center  font-medium text-blue-500 hover:cursor-pointer  border-b-2 border-b-teal-500'>Our Mission 
         
       <img src="/images/illustrations/2/25.png" alt="Quote" className='h-10 w-15 px-4'/>
         
         </span>
 
-        <div className='flex flex-col md:flex-row md:space-x-20 w-full'>
-        <img src="/images/waterdrinking.jpg" alt="Child drinking water" className='h-[300px] md:w-1/2  rounded-lg object-cover'/>
-        <p className='md:text-xl text-lg tracking-wide my-2 flex items-center justify-center md:w-1/2'>
+        <div className={`flex flex-col md:flex-row md:space-x-20 w-full `} ref={sec2Ref} >
+        <img ref={sec2Ref} src="/images/waterdrinking.jpg" alt="Child drinking water" className={`h-[300px] md:w-1/2  rounded-lg object-cover ${sec2View ? 'animate-[fadeInRight_1s_ease-in-out]': ""}`}/>
+        <p ref={sec2Ref} className={`md:text-xl text-lg tracking-wide my-2 flex items-center justify-center md:w-1/2 ${sec2View ? 'animate-[fadeInLeft_1s_ease-in-out]': ""}`}>
           Our mission is simple yet profound, to ensure that no one goes thirsty.   &nbsp;  We strive to make clean water accessible to all, regardless of geographical location, socioeconomic status, or any other barriers they may face. &nbsp; By providing free water bottles and supply bottles, we aim to quench the thirst of those in need and contribute to a healthier, more equitable world.</p>
         </div>
         
         </section>
 
       {/* How we work */}
-      <section id='howwework' className={`px-10 ${sec3View ? 'animate-[wiggle_1s_ease-in-out]' : ''}`} ref={sec3Ref}>
+      <section  ref={sec3Ref} id='howwework' className={`px-10 ${sec3View ? 'animate-[wiggle_1s_ease-in-out]' : ''}`} >
         <span className='text-[40px] font-medium text-blue-500 my-5 h-16 border-b-2 border-b-teal-500'>How we work</span>
 
         <div className='flex md:space-x-20 w-full md:flex-row flex-col'>
-        <p className='text-xl tracking-wide my-2 flex items-center justify-center md:w-1/2'>
+        <p className={`text-xl tracking-wide my-2 flex items-center justify-center md:w-1/2 `}>
         Through partnerships with the local communities, nonprofits, and businesses, we identify areas with limited access to clean water and distribute our water bottles and supply bottles directly to those in need. We prioritize areas where water scarcity poses significant challenges to daily life, such as remote villages, disaster-stricken regions, and underserved urban areas.
         </p>
-        <img src="/images/partnership.jpg" alt="Partnership" className='md:w-1/2 w-full  rounded-lg object-cover'/>
+        <img src="/images/partnership.jpg" alt="Partnership" className={`md:w-1/2 w-full  rounded-lg object-cover `}/>
         </div>
       
       </section>
@@ -119,17 +119,18 @@ function HomePage() {
       <div className='h-10 w-full px-10 flex items-end mt-20'>
       <img src="/images/illustrations/2/21.png" alt="Quote" className='h-1/2 md:h-full w-10 md:w-20'/>
       </div>
-      <div ref={sec4Ref} className={`${sec4View ? 'animate-[wiggle_1s_ease-in-out]' : ''}`}>
+      {/* <div ref={sec4Ref} className={`${sec4View ? 'animate-[wiggle_1s_ease-in-out]' : ''}`}> */}
       <Quote quote={`From keeping us hydrated and clean, to preventing the spread of deadly diseases, clean water is an essential that has such a huge ripple effect around the world. Tragically, almost 1 in 10 people lack clean water close to home, and climate change is only making things worse.`}/>
-      </div>
+      
       <Quote quote={"Together we can make clean water the star of the show, and make sure it's in reach for everyone, everywhere."}>
-
       </Quote>
+      {/* </div> */}
+
       </div>
       
       <div className='h-30 w-full flex items-center justify-center space-x-10 '>
 
-      <p className='md:text-[50px] text-[40px] text-teal-400  font-medium mt-10'>Want to work with us!! </p>
+      <p className='md:text-[50px] text-[30px] text-teal-400  font-medium mt-10'>Want to work with us!! </p>
       <img src="/images/illustrations/2/22.png" alt="" className='h-20 w-20 hidden md:block'/>
 
       </div>
