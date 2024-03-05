@@ -38,7 +38,7 @@ function Header() {
         
               </Link>
         </div>
-            <div className='md:flex items-center justify-normal space-x-10'>
+            <div className='md:flex items-center justify-normal'>
             <NavItem name="Home" linkLocation={""}/>
             <NavItem name="About" linkLocation={"about"}/>
             <NavItem name="FAQ" linkLocation={"faq"}/>
@@ -55,9 +55,9 @@ function Header() {
         <span className="material-symbols-outlined text-3xl text-slate-600" onClick={handleMenu}>menu</span>
         </div>
 )}
-{menuOpen && ( <nav className='md:hidden h-max flex flex-col items-center space-y-5  py-5 outline-none border-b-2 border-b-slate-500 shadow-lg w-full z-10  ease-linear delay-75'>
+{menuOpen && ( <nav className='md:hidden h-max flex flex-col items-center space-y-5  py-5   border-b-2 border-b-slate-500 shadow-lg w-full z-10  ease-out delay-300 transition-all'>
          
-           <div className='flex items-center justify-center hover:cursor-pointer' onClick={handleMobileNavClick} name="Home" >
+           <div className='flex items-center duration-300 justify-center hover:cursor-pointer' onClick={handleMobileNavClick} name="Home" >
             <img src="/images/aqua_ads_logo_white.jpg" alt="Logo" className='h-1/2 w-1/2'/>
             </div>
            

@@ -58,12 +58,12 @@ function HomePage() {
       </div>
 
       {/* Right to Free Water */}
-      <section ref={sec1Ref}  id='howwework' className={`flex flex-col md:items-center md:flex-row md:justify-between w-full mt-10 items-center justify-center transition-all delay-700 duration-700 ${sec1View ? 'animate-[wiggle_1s_ease-in-out]' : ''}`}>
+      <section ref={sec1Ref}  id='howwework' className={`flex flex-col md:items-center md:flex-row md:justify-between w-full mt-10 items-center justify-center transition-all delay-700 duration-700 ${sec1View ? 'animate-[wiggle_1s_ease-in-out_0.4s]' : ''}`}>
       
-        <div className='flex flex-col md:w-1/2'>
+        <div  className={`flex flex-col md:w-1/2 {sec1View ? 'animate-[wiggle_1s_ease-in-out_0.4s]' : ''}`}>
           <div className='flex flex-col items-center h-full'>
-          <h1 style={{fontFamily: "Lato Regular"}} className='h-14 md:h-28 lg:text-8xl text-5xl text-black font-[900]'>Right  To</h1>
-          <h1 style={{fontFamily: "Lato Regular"}} className='h-14 md:h-28 lg:text-8xl text-5xl text-black font-[900]'>Free  Water</h1>
+          <h1  className='h-14 md:h-28 lg:text-6xl text-5xl text-black font-[900]'>Right  To</h1>
+          <h1  className='h-14 md:h-28 lg:text-6xl text-5xl text-black font-[900]'>Free  Water</h1>
           </div>
         <p className='md:text-xl text-lg tracking-wide px-10 mb-20 md:mb-0'>
         Right to free water is a campaign for a cause and Innovative advertising solution. Which brings impactful visibility to the targeted customers.

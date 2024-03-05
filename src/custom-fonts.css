@@ -2,10 +2,21 @@
     font-family: 'Conquera Medium';
     src: URL('/Conquera-Medium.woff2') format('woff2');
   }
-
+@font-face {
+  font-family: 'Icomoon';
+  src: url('/icomoon.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Vantam Regular';
+  src: url('/vantam.woff2') format('woff2');
+}
 @font-face {
     font-family: 'Product Sans Regular';
     src: URL('/Product-Sans.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'Syne';
+    src: URL('/Syne.ttf') format('truetype');
   }
 @font-face {
   font-family: 'League Spartan';
@@ -15,3 +26,4 @@
   font-family: 'Lato Regular';
   src: url('/Lato/Lato-Regular.ttf') format('truetype');
 }
+

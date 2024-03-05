@@ -11,7 +11,7 @@ import FAQPage from './pages/FAQPage'
 function App() {
   return (
     
-    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover text-justify font-Conquera Medium text-[#6d7c90]' style={{fontFamily: "Lato Regular"}}>
+    <main className='h-screen w-full  bg-center bg-no-repeat bg-cover text-justify font-medium' style={{fontFamily: "Syne"}}>
     <BrowserRouter>
     <Header/>
     <Routes>
