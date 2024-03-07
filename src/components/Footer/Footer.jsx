@@ -22,11 +22,11 @@ function Footer() {
                 </div>
                 <div className='flex items-center justify-center'>
                     <span className="material-symbols-outlined text-lg">whatshot</span>
-                    <span className='text-sm'>&nbsp; - &nbsp;   <a target='blank' href="https://wa.me/9700111520">+919700111520</a></span>
+                    <span className='text-sm'>&nbsp; - &nbsp;   <a target='blank' href="https://wa.me/9032452039">+919032452039</a></span>
                 </div>
                 <div className='flex items-center justify-center'>
                     <span className="material-symbols-outlined text-lg">call</span>
-                    <span className='text-sm'>&nbsp; - &nbsp;  +919700111520</span>
+                    <span className='text-sm'>&nbsp; - &nbsp;  +919032452039</span>
                 </div>
             </div>
         </div>
